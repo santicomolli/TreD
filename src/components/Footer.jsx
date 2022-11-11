@@ -8,17 +8,17 @@ const Footer = () => {
         <footer className="fixed-bottom">
             <div classname="info-1">
                 <h4>
-                    info 1
+                    logo tred
                 </h4>
             </div>
             <div classname="info-2">
                 <h4>
-                    info 1
+                    mismo que menu hamburguesa
                 </h4>
             </div>
             <div classname="info-3">
                 <h4>
-                    info 1
+                    iconos redes sociales
                 </h4>
             </div>
         </footer>
