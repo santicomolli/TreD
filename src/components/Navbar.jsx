@@ -1,13 +1,15 @@
 import React from 'react'
-import logo from "../assets/tredLogo.jpeg"
+import logo from "../assets/logo-nav.svg"
 import "../css/Navbar.css"
 import {Link} from "react-router-dom"
+import Carousel from "../components/Carousel"
+
 
 const Navbar = () => {
 
     return (
-
-        <nav class="navbar navbar-expand-lg navmio">
+<>
+        <nav class="navbar navbar-expand-lg navmio sticky-top">
             <div class="container-fluid">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -40,7 +42,11 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+    <div>
+      <Carousel/>
+    </div>
+</>
     )
-}
+  }
 
 export default Navbar
