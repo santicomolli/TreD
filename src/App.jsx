@@ -11,7 +11,7 @@ function App() {
   return (
       <BrowserRouter>    
           <Navbar/>
-          <Carousel/>
+          {/* <Carousel/> */}
           <Footer/>
       </BrowserRouter>
     )

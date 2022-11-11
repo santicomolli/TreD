@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../assets/logoFooter.jpg"
 import "../css/Footer.css"
 import logoFooter from "../assets/logo-footer.png"
 
@@ -9,7 +8,7 @@ const Footer = () => {
 
         <footer classname="bottom">
             <div classname="info-1">
-                <img src= {logoFooter}>
+                <img src= {logoFooter} width={200} height={100} >
                 </img>
             </div>
             <div classname="info-2">
