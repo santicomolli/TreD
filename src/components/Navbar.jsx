@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/tredLogo.jpeg"
-import "../css/Navbar.css"
 import {Link} from "react-router-dom"
+import "../css/Navbar.css"
 
 const Navbar = () => {
 
@@ -11,7 +11,7 @@ const Navbar = () => {
             <div class="container-fluid">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                    <img src={logo} alt="" width="50" height="38"/>
+                    <img src={logo} alt="" width="50" height="40"/>
                     </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <Link class="nav-link active" aria-current="page" href="#">Inicio</Link>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

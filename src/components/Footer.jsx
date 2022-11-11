@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../assets/logoFooter.jpg"
 import "../css/Footer.css"
 
 const Footer = () => {
@@ -7,9 +8,7 @@ const Footer = () => {
 
         <footer className="fixed-bottom">
             <div classname="info-1">
-                <h4>
-                    logo tred
-                </h4>
+                    <img src={logo} alt="Tred" width={200} height={200} />
             </div>
             <div classname="info-2">
                 <h4>
