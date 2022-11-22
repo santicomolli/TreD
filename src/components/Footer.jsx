@@ -1,40 +1,48 @@
 import React from 'react'
-import "../css/Footer.css"
+import {NavLink} from "react-router-dom"
 import logoFooter from "../assets/logo-footer.png"
+import "../css/Footer.css"
 
 const Footer = () => {
 
     return (
 
-        <footer classname="bottom">
-            <div classname="info-1">
-                <img src= {logoFooter}>
-                </img>
-            </div>
-            <div classname="info-2">
-                <h4>
-                    mismo que menu hamburguesa
-                </h4>
-            </div>
-            <div classname="info-3">
-            <div class="social-container">
-                    <ul class="soc-list" tabindex="0" aria-label="">
-                    <li class="soc-facebook">
-                        <a href="https://www.facebook.com/" target="_blank" aria-label="facebook link">facebook</a>
-                    </li>
-                    <li class="soc-instagram">
-                        <a href="https://www.instagram.com" target="_blank" aria-label="instagram link">instagram</a>
-                    </li>
-                    <li class="soc-linkedin">
-                        <a href="https://www.linkedin.com" target="_blank" aria-label="linkedin link">linkedin</a>
-                    </li>
-                    <li class="soc-twitter">
-                        <a href="https://twitter.com" target="_blank" aria-label="twitter link">twitter</a>
-                    </li>
-                    <li class="soc-youtube">
-                        <a href="https://www.youtube.com" target="_blank" aria-label="youtube link">youtube</a>
-                    </li>
-                </ul>
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <div class="footer-col col d-flex justify-content-around align-items-center">
+                        {/* columna 1 */}
+                        <div class="logo">
+                            <img class="img-logo-footer" src={logoFooter} alt="logo" />
+                        </div>
+
+                        {/* columna 2 */}
+                            <div>
+                                <h4>
+                                    Ver que contenido poner aca
+                                </h4>
+                            </div>
+
+                        {/* columna 3 */}
+                        <div class="col-links-2">
+                            <ul>
+                                <li>
+                                    <a class="text-black text-decoration-none" href='https://www.instagram.com/?hl=es' target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram </a>
+                                </li>
+                                <li>
+                                    <a class="text-black text-decoration-none" href='https://www.facebook.com/' target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+                                </li>
+                                <li>
+                                    <a class="text-black text-decoration-none" href='https://twitter.com/' target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center leyenda">
+                    <hr />
+                    <p> &copy; Ver si quieren ponerle su copyright</p>
                 </div>
             </div>
         </footer>
