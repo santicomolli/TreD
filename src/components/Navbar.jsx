@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo-nav.svg"
 import "../css/Navbar.css"
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 
 
@@ -12,9 +12,9 @@ const Navbar = () => {
             <nav class="navbar navbar-expand-lg navmio sticky-top">
                 <div class="container-fluid">
                     <div class="container">
-                        <a class="navbar-brand" href="#">
+                        <Link class="navbar-brand" to="/">
                             <img src={logo} alt="logo" width="60" height="38"/>
-                        </a>
+                        </Link>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,21 +22,21 @@ const Navbar = () => {
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <NavLink class="nav-link active navLink" aria-current="page" to="/">Inicio</NavLink>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Proyectos</a>
+                                <NavLink class="nav-link dropdown-toggle navLink" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyectos</NavLink>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Recidencial</a></li>
-                                    <li><a class="dropdown-item" href="#">Comercial</a></li>
+                                    <li><NavLink class="dropdown-item navLink" to="/*">Recidencial</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink" to="/*">Comercial</NavLink></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Equipo</a>
+                                <NavLink class="nav-link navLink" to="/equipo">Equipo</NavLink>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
+                                <NavLink class="nav-link navLink" to="/contacto">Contacto</NavLink>
                             </li>
                         </ul>
                     </div>
