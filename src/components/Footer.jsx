@@ -25,15 +25,15 @@ const Footer = () => {
 
                         {/* columna 3 */}
                         <div class="col-links-2">
-                            <ul>
+                            <ul className="listRedes">
                                 <li>
-                                    <a class="text-black text-decoration-none" href='https://www.instagram.com/?hl=es' target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram </a>
+                                    <a class="text-black text-decoration-none" href='https://www.instagram.com/?hl=es' target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>  </a>
                                 </li>
                                 <li>
-                                    <a class="text-black text-decoration-none" href='https://www.facebook.com/' target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook </a>
+                                    <a class="text-black text-decoration-none" href='https://www.facebook.com/' target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>  </a>
                                 </li>
                                 <li>
-                                    <a class="text-black text-decoration-none" href='https://twitter.com/' target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter </a>
+                                    <a class="text-black text-decoration-none" href='https://twitter.com/' target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>  </a>
                                 </li>
                             </ul>
                         </div>

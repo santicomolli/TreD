@@ -21,7 +21,7 @@ const HomeScreen = () => {
                             <div className="polaroid">
                                 <img src={residencial} alt="" className="img-card"/>
                                 <div className="container-proy">
-                                    <p>Comercial</p>
+                                    <h4>Residencial</h4>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +29,7 @@ const HomeScreen = () => {
                             <div className="polaroid">
                                 <img src={comercial} alt="" className="img-card"/>
                                 <div className="container-proy">
-                                    <p>Comercial</p>
+                                    <h4 className="">Comercial</h4>
                                 </div>
                             </div>
                         </div>

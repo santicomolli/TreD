@@ -6,7 +6,7 @@
 
 .form{
     position: relative;
-    max-width: 40rem;
+    max-width: 30rem;
     padding:10rem 0;
     color: #fff;
     background-color: #fff;
@@ -22,7 +22,7 @@
     left: 0;
     width: 100%;
     height: 10rem;
-    background: linear-gradient(to left, #fc6767, #ec008c);
+    background: linear-gradient(0deg, rgba(181,186,182,1) 40%, rgba(194,190,181,1) 60%);
     border-radius:1rem 1rem 100% 100%;
     z-index: -1;
 }
@@ -91,7 +91,7 @@
     display: block;
     margin: 2.5rem auto 3rem;
     padding:1rem 5rem;
-    background:linear-gradient(to left, #fc6767, #ec008c);
+    background: linear-gradient(0deg, rgba(181,186,182,1) 40%, rgba(194,190,181,1) 60%);
     color:#fff;
     font: inherit;
     border: .5rem solid #fff;
@@ -102,6 +102,18 @@
 
 .form_botton:hover{
     background:linear-gradient(to right, #fc6767, #ec008c);
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+    width: 80px;
+    z-index: 2;
+}
+
+.whatsapp img {
+    width: 80%;
 }
 
 @media screen and (min-width: 43.75rem) {

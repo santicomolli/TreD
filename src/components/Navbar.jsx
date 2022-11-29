@@ -12,7 +12,7 @@ const Navbar = () => {
             <nav class="navbar navbar-expand-lg navmio sticky-top">
                 <div class="container-fluid">
                     <div class="container">
-                        <Link class="navbar-brand" to="/">
+                        <Link class="navbar-brand logoTred" to="/">
                             <img src={logo} alt="logo" width="60" height="38"/>
                         </Link>
                     </div>
@@ -20,12 +20,12 @@ const Navbar = () => {
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 listaLinks">
                             <li class="nav-item">
                                 <NavLink class="nav-link active navLink" aria-current="page" to="/">Inicio</NavLink>
                             </li>
                             <li class="nav-item dropdown">
-                                <NavLink class="nav-link dropdown-toggle navLink" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Proyectos</NavLink>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><NavLink class="dropdown-item navLink" to="/*">Recidencial</NavLink></li>
@@ -33,10 +33,10 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <NavLink class="nav-link navLink" to="/equipo">Equipo</NavLink>
+                                <NavLink class="nav-link navLink active" to="/equipo">Equipo</NavLink>
                             </li>
                             <li class="nav-item">
-                                <NavLink class="nav-link navLink" to="/contacto">Contacto</NavLink>
+                                <NavLink class="nav-link navLink active" to="/contacto">Contacto</NavLink>
                             </li>
                         </ul>
                     </div>

@@ -1,0 +1,83 @@
+.filaCarrousel{
+    margin-top:0;
+    margin-bottom: 50px;
+}
+
+.equipoDescr{
+    background-color: transparent !important;
+}
+
+
+.container-mio{
+    text-align: center;
+}
+
+.sub-container{
+    max-width: 1200px;
+    margin:auto;
+    padding:48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams{
+    margin:10px ;
+    padding:22px;
+    max-width:30%;
+    cursor:pointer;
+    transition:0.4s;
+    box-sizing: border-box;
+}
+
+.teams:hover{
+    background:#ddd ;
+    border-radius: 12px;
+}
+
+.teams img{
+    width:90px;
+    height:90px;
+}
+
+.name{
+    padding:12px;
+    font-weight: bold;
+    font-size:16px;
+    text-transform: uppercase;
+}
+
+.desig{
+    font-style: italic;
+    color:#fff;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color:#4e4e4e;
+}
+
+.social-links{
+    margin: 14px;
+}
+
+.social-links a{
+    color:#444;
+    text-decoration:none;
+    display:inline-block;
+    height:30px;
+    width:30px;
+    transition:.4s;
+}
+
+.social-links a:hover{
+    transform:scale(1.5);
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .teams{
+        max-width:100%;
+    }
+}
