@@ -8,7 +8,6 @@ import "../css/HomeScreen.css"
 const HomeScreen = () => {
 
     return (
-        
         <>
             <div>
                 <Carousel/>
@@ -16,20 +15,20 @@ const HomeScreen = () => {
 
             <div>
                 <div class="container">
-                    <div class="row m-5 text-center">
-                        <div class="col">
-                            <div className="polaroid">
+                    <div class="row prueba m-5 text-center">
+                        <div className="col-md-6 col-sm-12">
+                            <div className="polaroidR">
                                 <img src={residencial} alt="" className="img-card"/>
                                 <div className="container-proy">
                                     <h4>Residencial</h4>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div className="polaroid">
-                                <img src={comercial} alt="" className="img-card"/>
+                        <div className="col-md-6 col-sm-12">
+                            <div className="polaroidC">
+                                <img src={comercial} alt="comercial" className="img-card"/>
                                 <div className="container-proy">
-                                    <h4 className="">Comercial</h4>
+                                    <h4>Comercial</h4>
                                 </div>
                             </div>
                         </div>

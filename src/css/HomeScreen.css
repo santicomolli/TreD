@@ -1,6 +1,19 @@
-div.polaroid{
+/* div.order{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+} */
+
+div.polaroidC{
     width: 80%;
-    background-color:white;
+    background-color: #D8BBB7;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-bottom: 25px;
+    border-radius:25px;
+}
+div.polaroidR{
+    width: 80%;
+    background-color: #B5BAB6;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-bottom: 25px;
     border-radius:25px;
@@ -16,8 +29,21 @@ div.container-proy{
     border-radius:25px 25px 0 0 ;
 }
 
-.polaroid:hover{
+.polaroidC:hover{
     transform: scale(1.2);
     transition-duration: 500ms;
     cursor: pointer;
+}
+.polaroidR:hover{
+    transform: scale(1.2);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px){
+    .prueba {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }   
 }
