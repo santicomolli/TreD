@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Carousel from './components/Carousel';
+import RoutesApp from "./Routes/RoutesApp";
+
 import './App.css'
 
 function App() {
@@ -10,9 +9,9 @@ function App() {
 
   return (
       <BrowserRouter>    
-          <Navbar/>
-          <Carousel/>
-          <Footer/>
+          <Routes>
+            <Route path="/*" element={<RoutesApp/>} />
+          </Routes>
       </BrowserRouter>
     )
 }

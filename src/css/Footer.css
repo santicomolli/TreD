@@ -1,8 +1,40 @@
-footer{
-    background:#C2BEB5;
+.footer{
+    padding-top:10px;
+    /* background:#C2BEB5; */
+    margin-top:auto;
+    background: linear-gradient(90deg, rgba(194,190,181,1) 0%, rgba(216,187,183,1) 50%, rgba(181,186,182,1) 100%);
+}
+
+.img-logo-footer{
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.col-links-2 ul{
+    list-style: none;
+}
+
+.col-links-contacto ul{
+    list-style: none;
+
+}
+
+.col-links-2{
+    list-style: none;
+}
+
+.listRedes{
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    align-items:center;
-    height: 220px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listRedes li{
+    margin: 10px;
+}
+
+.listRedes li:hover{
+    transform:scale(1.5);
+    color: black;
 }

@@ -1,52 +1,49 @@
 import React from 'react'
 import logo from "../assets/logo-nav.svg"
 import "../css/Navbar.css"
-import {Link} from "react-router-dom"
-import Carousel from "../components/Carousel"
+import {Link, NavLink} from "react-router-dom"
+
 
 
 const Navbar = () => {
 
     return (
-<>
-        <nav class="navbar navbar-expand-lg navmio sticky-top">
-            <div class="container-fluid">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                    <img src={logo} alt="" width="50" height="38"/>
-                    </a>
+
+            <nav class="navbar navbar-expand-lg navmio sticky-top">
+                <div class="container-fluid">
+                    <div class="container">
+                        <Link class="navbar-brand logoTred" to="/">
+                            <img src={logo} alt="logo" width="60" height="38"/>
+                        </Link>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src={logo} alt="logo" width="60" height="38"></img>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 listaLinks">
+                            <li class="nav-item">
+                                <NavLink class="nav-link active navLink" aria-current="page" to="/">Inicio</NavLink>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyectos</NavLink>
+                                <ul class="dropdown-menu bg" aria-labelledby="navbarDropdown">
+                                    <li><NavLink class="dropdown-item navLink" to="/*">Residencial</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink" to="/*">Comercial</NavLink></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink class="nav-link navLink active" to="/equipo">Equipo</NavLink>
+                            </li>
+                            <li class="nav-item">
+                                <NavLink class="nav-link navLink active" to="/contacto">Contacto</NavLink>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Proyectos</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Recidencial</a></li>
-                                <li><a class="dropdown-item" href="#">Comercial</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Equipo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    <div>
-      <Carousel/>
-    </div>
-</>
+            </nav>
+
     )
-  }
+}
 
 export default Navbar
