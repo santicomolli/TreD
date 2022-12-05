@@ -1,14 +1,14 @@
 import React from 'react'
+import {Link, NavLink} from "react-router-dom"
 import logo from "../assets/logo-nav.svg"
 import "../css/Navbar.css"
-import {Link, NavLink} from "react-router-dom"
-
 
 
 const Navbar = () => {
 
     return (
 
+        <>
             <nav class="navbar navbar-expand-lg navmio sticky-top">
                 <div class="container-fluid">
                     <div class="container">
@@ -42,6 +42,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+        </>
 
     )
 }

@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import render1 from '../assets/render1.jpg';
 import render2 from '../assets/render2.jpg';
-import render3 from '../assets/render3.jpg'
+import render3 from '../assets/render3.jpg';
 
 import "../css/Carousel.css"
 
