@@ -1,12 +1,14 @@
-.filaCarrousel{
-    margin-top:0;
-    margin-bottom: 50px;
+.carousel-mio{
+    height:90vh !important;
+    min-height:300px !important;
+    background: no-repeat center center scroll !important;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
 }
 
 .equipoDescr{
     background-color: transparent !important;
 }
-
 
 .container-mio{
     text-align: center;

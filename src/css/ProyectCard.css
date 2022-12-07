@@ -1,0 +1,8 @@
+.cardMia{
+    background: transparent !important;
+    border: none transparent !important;
+}
+
+.card-body ul{
+    list-style: none;
+}

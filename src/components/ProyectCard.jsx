@@ -1,18 +1,26 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom"
+import render1 from "../assets/render1.jpg"
+import render2 from "../assets/render2.jpg"
+import render3 from "../assets/render3.jpg"
 import logo from "../assets/logo-nav.svg"
-import render1 from '../assets/render1.jpg';
-import render2 from '../assets/render2.jpg';
-import render3 from '../assets/render3.jpg';
-import "../css/Header.css"
 
 
-const Header = () => {
+import "../css/ProyectCard.css"
+
+
+
+
+const ProyectCard = () => {
+
+
+//Aca tengo que hacer una funcion y que haga un mapeo para rellenar las fotos del carousel con fotos del proyecto que se quiere mostrar. Tengo que buscar por el id, desp mapear el objeto y a las imagenes que tenga cargarlas al carousel
 
 
     return (
 
         <>
+
             <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <div class="container-fluid">
                     <div class="container">
@@ -32,7 +40,8 @@ const Header = () => {
                                 <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Proyectos</NavLink>
                                 <ul class="dropdown-menu bg" aria-labelledby="navbarDropdown">
-                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/*">Residencial</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/*">Residencial</NavLink>
+                                    </li>
                                     <li><NavLink class="dropdown-item navLink " to="/*">Comercial</NavLink></li>
                                 </ul>
                             </li>
@@ -46,29 +55,37 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={render1} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><p>Confianos tu <b>SUEÑO</b> , que en <b>TreD</b>, lo hacemos <b>REALIDAD</b>.</p></h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        <img src={render1} class="d-block w-100"/>
                     </div>
                     <div class="carousel-item">
-                        <img src={render2} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
+                        <img src={render2} class="d-block w-100"/>
                     </div>
-                    <div class="carousel-item" >
-                        <img src={render3} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-item">
+                        <img src={render3} class="d-block w-100"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src={render1} class="d-block w-100"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src={render2} class="d-block w-100"/>
+                    </div>
+                </div>
+            </div>
+            <div className="container mt-5 mb-5">
+                <div className="card cardMia">
+                    <div class="col">
+                        <div class="card-body">
+                            <h3 class="card-title">Benito Santos</h3>
+                            <hr />
+                            <ul>
+                                <li><h5><b>Año:</b></h5></li>
+                                <li><h5><b>Superficie:</b></h5></li>
+                                <li><h5><b>Ubicacion:</b></h5></li>
+                            </ul>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
@@ -77,4 +94,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default ProyectCard

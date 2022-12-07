@@ -10,7 +10,7 @@ const ContactoScreen = () => {
 
         <>
             <div>
-                <Carousel/>
+                <Header/>
             </div>
             <div className="container mt-5 mb-5">
                 {/* <div className="form">

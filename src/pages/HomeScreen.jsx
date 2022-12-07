@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from "react-router-dom"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import residencial from "../assets/residencial.jpg"
@@ -12,7 +13,6 @@ const HomeScreen = () => {
             <div>
                 <Header/>
             </div>
-
             <div>
                 <div class="container">
                     <div class="row prueba m-5 text-center">
