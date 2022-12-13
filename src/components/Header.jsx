@@ -1,7 +1,9 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom"
-import logo from "../assets/logo-nav.svg"
-import render1 from '../assets/render1.jpg';
+import logo from "../assets/logo-nav.svg";
+import logoGrande from "../assets/logoGrande.png"
+import portada from "../assets/portada.jpg";
+import portadacel from "../assets/ventana.jpg";
 import render2 from '../assets/render2.jpg';
 import render3 from '../assets/render3.jpg';
 import "../css/Header.css"
@@ -17,7 +19,7 @@ const Header = () => {
                 <div class="container-fluid">
                     <div class="container">
                         <Link class="navbar-brand logoTred" to="/">
-                            <img src={logo} alt="logo" width="60" height="38"/>
+                            <img src={logoGrande} alt="logo" width="130" height="60"/>
                         </Link>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +41,6 @@ const Header = () => {
                             <li class="nav-item">
                                 <NavLink class="nav-link navLink active" to="/equipo">Equipo</NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink class="nav-link navLink active" to="/contacto">Contacto</NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -51,26 +50,26 @@ const Header = () => {
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src={render1} class="d-block w-100" alt="..."/>
+                        <img src={portada} class="d-block w-100" alt="..."/>
                         <div class="carousel-caption d-none d-md-block">
                             <h5><p>Confianos tu <b>SUEÑO</b> , que en <b>TreD</b>, lo hacemos <b>REALIDAD</b>.</p></h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <hr></hr>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    {/* <div class="carousel-item">
                         <img src={render2} class="d-block w-100" alt="..."/>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <p></p>
                         </div>
-                    </div>
-                    <div class="carousel-item" >
+                    </div> */}
+                    {/* <div class="carousel-item" >
                         <img src={render3} class="d-block w-100" alt="..."/>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

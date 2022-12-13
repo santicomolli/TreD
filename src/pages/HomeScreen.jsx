@@ -1,9 +1,10 @@
 import React from 'react'
-import {NavLink} from "react-router-dom"
+
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import residencial from "../assets/residencial.jpg"
-import comercial from "../assets/comercial.jpg"
+import HomeCard from "../components/HomeCard"
+// import residencial from "../assets/residencial.jpg"
+// import comercial from "../assets/comercial.jpg"
 import "../css/HomeScreen.css"
 
 const HomeScreen = () => {
@@ -13,7 +14,11 @@ const HomeScreen = () => {
             <div>
                 <Header/>
             </div>
-            <div>
+                <div>
+                <HomeCard/>
+                </div>
+
+            {/* <div>
                 <div class="container">
                     <div class="row prueba m-5 text-center">
                         <div className="col-md-6 col-sm-12">
@@ -33,8 +38,8 @@ const HomeScreen = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
             <Footer/>
         </>
     )
