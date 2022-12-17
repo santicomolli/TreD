@@ -2,6 +2,7 @@ import React from 'react'
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
+// import Parallax from '../components/Parallax'
 import HomeCard from "../components/HomeCard"
 // import residencial from "../assets/residencial.jpg"
 // import comercial from "../assets/comercial.jpg"
@@ -14,9 +15,11 @@ const HomeScreen = () => {
             <div>
                 <Header/>
             </div>
-                <div>
+
+            <div>
                 <HomeCard/>
-                </div>
+                {/* <Parallax/> */}
+            </div>
 
             {/* <div>
                 <div class="container">

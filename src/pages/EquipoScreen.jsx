@@ -37,9 +37,6 @@ const EquipoScreen = () => {
                             <li class="nav-item">
                                 <NavLink class="nav-link navLink active" to="/equipo">Equipo</NavLink>
                             </li>
-                            <li class="nav-item">
-                                <NavLink class="nav-link navLink active" to="/contacto">Contacto</NavLink>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -67,92 +64,6 @@ const EquipoScreen = () => {
 
             <hr id='hrHome' />
 
-            <div className="container mb-5 container-mio">
-                <div className="row">
-                    <div className="col-md-12">
-                        <h1>Equipo</h1>
-                    </div>
-
-                    <div className="sub-container">
-                        <div className="teams">
-                            <img src="https://ph-files.imgix.net/2fb378d7-0035-4a85-817c-e819d8f5dbaa.png?auto=format&auto=compress&codec=mozjpeg&cs=strip" alt="" />
-                            <div className="name">Nombre 1</div>
-                            <div className="desig">Jefe</div>
-                            <div className="about">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing  elit. Optio, ab!
-                                </p>
-                            </div>
-
-                            <div className="social-links">
-                                <a href="#" className="fa fa-facebook"></a>
-                                <a href="#" className="fa fa-instagram"></a>
-                                <a href="#" className="fa fa-twitter"></a>
-                            </div>
-                        </div>
-
-                        <div className="teams">
-                        <img src="https://ph-files.imgix.net/2fb378d7-0035-4a85-817c-e819d8f5dbaa.png?auto=format&auto=compress&codec=mozjpeg&cs=strip" alt="" />
-                            <div className="name">Nombre 2</div>
-                            <div className="desig">Diseñador</div>
-                            <div className="about">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ab!
-                                </p>
-                            </div>
-
-                            <div className="social-links">
-                                <a href="#" className="fa fa-facebook"></a>
-                                <a href="#" className="fa fa-instagram"></a>
-                                <a href="#" className="fa fa-twitter"></a>
-                            </div>
-                        </div>
-
-                        <div className="teams">
-                        <img src="https://ph-files.imgix.net/2fb378d7-0035-4a85-817c-e819d8f5dbaa.png?auto=format&auto=compress&codec=mozjpeg&cs=strip" alt="" />
-                            <div className="name">Nombre 3</div>
-                            <div className="desig">Limpieza</div>
-                            <div className="about">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing  elit. Optio, ab!
-                                </p>
-                            </div>
-                            <div className="social-links">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-
-                        <div className="teams">
-                        <img src="https://ph-files.imgix.net/2fb378d7-0035-4a85-817c-e819d8f5dbaa.png?auto=format&auto=compress&codec=mozjpeg&cs=strip" alt="" />
-                            <div className="name">Nombre 3</div>
-                            <div className="desig">Limpieza</div>
-                            <div className="about">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing  elit. Optio, ab!
-                                </p>
-                            </div>
-                            <div className="social-links">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                        
-                        <div className="teams">
-                        <img src="https://ph-files.imgix.net/2fb378d7-0035-4a85-817c-e819d8f5dbaa.png?auto=format&auto=compress&codec=mozjpeg&cs=strip" alt="" />
-                            <div className="name">Nombre 3</div>
-                            <div className="desig">Limpieza</div>
-                            <div className="about">
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing  elit. Optio, ab!
-                                </p>
-                            </div>
-                            <div className="social-links">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <Footer/>
         </>
     )
