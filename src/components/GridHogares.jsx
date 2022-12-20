@@ -2,6 +2,7 @@ import React from 'react'
 import {Link, NavLink} from "react-router-dom"
 import logoGrande from "../assets/logoGrande.png"
 import logo from "../assets/logo-nav.svg";
+import foto1 from "../assets/render3.jpg"
 import "../css/Hogares.css"
 
 const GridHogares = () => {
@@ -44,8 +45,9 @@ const GridHogares = () => {
                                 <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Proyectos</NavLink>
                                 <ul class="dropdown-menu bg" aria-labelledby="navbarDropdown">
-                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/*">Residencial</NavLink></li>
-                                    <li><NavLink class="dropdown-item navLink " to="/*">Comercial</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/gastronomia">Gastronomia</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/cafeteria">Cafeteria</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/hogares">Hogares</NavLink></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -60,8 +62,8 @@ const GridHogares = () => {
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4 colMia">
                         <div className="card cardMia">
-                            <img src="" alt="" />
                             <div className="card-body">
+                                <img src={foto1} alt="" className="card-img-top"/>
                                 <div className="card-title">
                                     <b>Ver proyecto</b> 
                                 </div>
@@ -70,8 +72,8 @@ const GridHogares = () => {
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 colMia">
                     <div className="card cardMia">
-                            <img src="" alt="" className="card-img-top"/>
                             <div className="card-body">
+                            <img src={foto1} alt="" className="card-img-top"/>
                                 <div className="card-title">
                                     <b>Ver proyecto</b> 
                                 </div>
@@ -80,8 +82,18 @@ const GridHogares = () => {
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 colMia">
                     <div className="card cardMia">
-                            <img src="" alt="" />
                             <div className="card-body">
+                            <img src={foto1} alt="" className="card-img-top"/>
+                                <div className="card-title">
+                                    <b>Ver proyecto</b> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 colMia">
+                    <div className="card cardMia">
+                            <div className="card-body">
+                            <img src={foto1} alt="" className="card-img-top"/>
                                 <div className="card-title">
                                     <b>Ver proyecto</b> 
                                 </div>

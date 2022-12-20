@@ -34,8 +34,9 @@ const Header = () => {
                                 <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Proyectos</NavLink>
                                 <ul class="dropdown-menu bg" aria-labelledby="navbarDropdown">
-                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/*">Residencial</NavLink></li>
-                                    <li><NavLink class="dropdown-item navLink " to="/*">Comercial</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/gastronomia">Gastronomia</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/cafeteria">Cafeteria</NavLink></li>
+                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/hogares">Hogares</NavLink></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
