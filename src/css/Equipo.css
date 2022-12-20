@@ -1,85 +1,48 @@
-.carousel-mio{
-    height:90vh !important;
-    min-height:300px !important;
-    background: no-repeat center center scroll !important;
-    -webkit-background-size: cover !important;
-    background-size: cover !important;
+.miGrid{
+    margin-top: 100px!important;
+    /* border: 2px dashed steelblue; */
+    padding: 2em;
+    margin: 5em auto;
+    width: 70rem !important;
+    height:75rem!important;
 }
 
-.equipoDescr{
-    background-color: transparent !important;
-}
-
-.container-mio{
+/* .miDiv{
+    border-radius: 5px;
+    color: #444;
+    font-size: 2.8em;
+    font-weight:bold;
     text-align: center;
+    background: rgba(173,216,230,.7) ;
+    width: 50px;
+    height: 600px;
+    position: relative;
+}
+ */
+
+.uno{
+    background-image: url("../assets/portada.jpg");
+    top:-30px;
+    right: -500px;
+    width: 500px !important;
+    height: 700px;
+    z-index: 0;
+    position: relative;
 }
 
-.sub-container{
-    max-width: 1200px;
-    margin:auto;
-    padding:48px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.dos{
+    background: white;
+    top:-350px;
+    left: 200px;
+    width: 400px !important;
+    height: 800px;
+    z-index: 1;
+    position: relative;
 }
 
-.teams{
-    margin:10px ;
-    padding:22px;
-    max-width:30%;
-    cursor:pointer;
-    transition:0.4s;
-    box-sizing: border-box;
-}
-
-.teams:hover{
-    background:#ddd ;
-    border-radius: 12px;
-}
-
-.teams img{
-    width:90px;
-    height:90px;
-}
-
-.name{
-    padding:12px;
-    font-weight: bold;
-    font-size:16px;
-    text-transform: uppercase;
-}
-
-.desig{
-    font-style: italic;
-    color:#fff;
-}
-
-.about{
-    margin: 20px 0;
-    font-weight: lighter;
-    color:#4e4e4e;
-}
-
-.social-links{
-    margin: 14px;
-}
-
-.social-links a{
-    color:#444;
-    text-decoration:none;
-    display:inline-block;
-    height:30px;
-    width:30px;
-    transition:.4s;
-}
-
-.social-links a:hover{
-    transform:scale(1.5);
-    color: black;
-}
-
-@media screen and (max-width:600px){
-    .teams{
-        max-width:100%;
+@media screen and (max-width: 990px)
+{
+    .miGrid{
+        display: none;
     }
 }

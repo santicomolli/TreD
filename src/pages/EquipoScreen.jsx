@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom"
 import logo from "../assets/logo-nav.svg"
+import logoGrande from "../assets/logoGrande.png"
 import equipo from "../assets/Equipo.jpg"
 import equipo2 from "../assets/equipo2.jpg"
 import Footer from "../components/Footer"
@@ -15,7 +16,7 @@ const EquipoScreen = () => {
                 <div class="container-fluid">
                     <div class="container">
                         <Link class="navbar-brand logoTred" to="/">
-                            <img src={logo} alt="logo" width="60" height="38"/>
+                            <img src={logoGrande} alt="logo" width="60" height="38"/>
                         </Link>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +44,23 @@ const EquipoScreen = () => {
                 </div>
             </nav>
 
-
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
+            <div className="container miGrid">
+                <div className="uno miDiv">
+                </div>
+                <div className="dos miDiv">
+                    <h3 className='text-black'>Estudio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse saepe asperiores delectus aut atque vel molestiae nemo! Error dolorum et dolor dignissimos ipsum aliquam! Autem repudiandae, quam nulla illum sed consequuntur, odio quia doloribus hic enim debitis. Unde, quam. Reprehenderit!</p>
+                    <hr />
+                    <h5 className='text-black'>Equipo</h5>
+                    <h6 className='text-black'>Arq 1</h6>
+                    <h6 className='text-black'>Arq 2</h6>
+                    <h6 className='text-black'>Arq 3</h6>
+                    <h6 className='text-black'>Arq 4</h6>
+                    <h6 className='text-black'>Arq 5</h6>
+                    <h6 className='text-black'>Arq 6</h6>
+                </div>
+            </div>
+            {/* <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
                 <div class="carousel-inner">
                     <div class="carousel-item active carousel-mio">
                         <img src={equipo} class="d-block w-100" alt="..."/>
@@ -61,7 +77,7 @@ const EquipoScreen = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <hr id='hrHome' />
 
