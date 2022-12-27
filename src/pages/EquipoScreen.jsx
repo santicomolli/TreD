@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link, NavLink} from "react-router-dom"
 import logo from "../assets/logo-nav.svg"
-import equipo from "../assets/Equipo.jpg"
+import equipo from "../assets/equipo.jpg"
 import equipo2 from "../assets/equipo2.jpg"
 import Footer from "../components/Footer"
 
@@ -46,21 +46,10 @@ const EquipoScreen = () => {
             </nav>
 
 
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
+            <div>
                 <div class="carousel-inner">
                     <div class="carousel-item active carousel-mio">
                         <img src={equipo} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5><p>Confianos tu <b>SUEÑO</b> , que en <b>TreD</b>, lo hacemos <b>REALIDAD</b>.</p></h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item carousel-mio">
-                        <img src={equipo2} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -69,7 +58,7 @@ const EquipoScreen = () => {
 
             <div className="container mb-5 container-mio">
                 <div className="row">
-                    <div className="col-md-12">
+                    <div className="col-md-12 text-white">
                         <h1>Equipo</h1>
                     </div>
 
