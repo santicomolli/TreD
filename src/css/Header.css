@@ -24,6 +24,10 @@
     font-size:18px;
     line-height: 1.9;
 }
+.navbar.scroll{
+    background:rgba(10, 13, 13, 0.3);
+    padding: 10px;
+}
 
 .navbar-nav a{
     font-size:18px;

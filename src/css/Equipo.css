@@ -1,8 +1,8 @@
-.miGrid{
+.miGrid2{
     margin-top: 100px!important;
     /* border: 2px dashed steelblue; */
     padding: 2em;
-    margin: 5em auto;
+    margin: 3em auto;
     width: 70rem !important;
     height:75rem!important;
 }
@@ -31,18 +31,18 @@
 }
 
 .dos{
-    background: white;
+    background:rgba(14, 13, 13, 0.2);
     top:-350px;
     left: 200px;
     width: 400px !important;
-    height: 800px;
+    height: 700px;
     z-index: 1;
     position: relative;
 }
 
 @media screen and (max-width: 990px)
 {
-    .miGrid{
+    .miGrid2{
         display: none;
     }
 }

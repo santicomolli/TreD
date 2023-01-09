@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import {Link, NavLink} from "react-router-dom"
 import logo from "../assets/logo-nav.svg"
 import logoGrande from "../assets/logoGrande.png"
@@ -10,41 +10,57 @@ import "../css/Equipo.css"
 
 const EquipoScreen = () => {
 
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBg = () =>{
+
+    if(window.scrollY >= 100){
+        setNavbar(true);
+    }
+    else
+    {
+        setNavbar(false);
+    }}
+    window.addEventListener("scroll", changeBg);
+    
     return (
         <>
-            <nav class="navbar navscroll navbar-expand-lg navbar-light fixed-top">
-                <div class="container-fluid">
-                    <div class="container">
-                        <Link class="navbar-brand logoTred" to="/">
-                            <img src={logoGrande} alt="logo" width="60" height="38"/>
+            <nav className={
+                navbar
+                ? "navbar scroll navbar-expand-lg navbar-dark fixed-top"
+                : "navbar navbar-expand-lg navbar-dark fixed-top"}>
+                <div className="container-fluid">
+                    <div className="container">
+                        <Link className="navbar-brand logoTred" to="/">
+                            <img src={logoGrande} alt="logo" width="130" height="60"/>
                         </Link>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <img src={logo} alt="logo" width="60" height="38"></img>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 listaLinks">
-                            <li class="nav-item active">
-                                <NavLink class="nav-link active navLink" aria-current="page" to="/">Inicio</NavLink>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav ml-auto mb-2 mb-lg-0 listaLinks">
+                            <li className="nav-item active">
+                                <NavLink className="nav-link active navLink" aria-current="page" to="/">Inicio</NavLink>
                             </li>
-                            <li class="nav-item dropdown">
-                                <NavLink class="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <NavLink className="nav-link dropdown-toggle navLink active" to="/proyectos" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Proyectos</NavLink>
-                                <ul class="dropdown-menu bg" aria-labelledby="navbarDropdown">
-                                    <li><NavLink class="dropdown-item navLink navbar-nav" to="/gastronomia">Gastronomia</NavLink></li>
-                                    <li><NavLink class="dropdown-item navLink " to="/cafeteria">Cafeteria</NavLink></li>
-                                    <li><NavLink class="dropdown-item navLink " to="/hogares">Hogares</NavLink></li>
+                                <ul className="dropdown-menu bg" aria-labelledby="navbarDropdown">
+                                    <li><NavLink className="dropdown-item navLink navbar-nav" to="/gastronomia">Gastronomia</NavLink></li>
+                                    <li><NavLink className="dropdown-item navLink " to="/cafeteria">Cafeteria</NavLink></li>
+                                    <li><NavLink className="dropdown-item navLink " to="/hogares">Hogares</NavLink></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
-                                <NavLink class="nav-link navLink active" to="/equipo">Equipo</NavLink>
+                            <li className="nav-item">
+                                <NavLink className="nav-link navLink active" to="/equipo">Equipo</NavLink>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <div className="container miGrid">
+            <div className="container miGrid2">
                 <div className="uno miDiv">
                 </div>
                 <div className="dos miDiv">
@@ -60,18 +76,18 @@ const EquipoScreen = () => {
                     <h6 className='text-black'>Arq 6</h6>
                 </div>
             </div>
-            {/* <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" interval={1000}>
-                <div class="carousel-inner">
-                    <div class="carousel-item active carousel-mio">
-                        <img src={equipo} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
+            {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" interval={1000}>
+                <div className="carousel-inner">
+                    <div className="carousel-item active carousel-mio">
+                        <img src={equipo} className="d-block w-100" alt="..."/>
+                        <div className="carousel-caption d-none d-md-block">
                             <h5><p>Confianos tu <b>SUEÑO</b> , que en <b>TreD</b>, lo hacemos <b>REALIDAD</b>.</p></h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>
                     </div>
-                    <div class="carousel-item carousel-mio">
-                        <img src={equipo2} class="d-block w-100" alt="..."/>
-                        <div class="carousel-caption d-none d-md-block">
+                    <div className="carousel-item carousel-mio">
+                        <img src={equipo2} className="d-block w-100" alt="..."/>
+                        <div className="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
                         </div>

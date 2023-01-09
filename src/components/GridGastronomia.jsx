@@ -3,6 +3,7 @@ import {Link, NavLink} from "react-router-dom"
 import logoGrande from "../assets/logoGrande.png"
 import logo from "../assets/logo-nav.svg";
 import foto1 from "../assets/render2.jpg"
+import 'animate.css'
 import "../css/Hogares.css"
 
 const GridGastronomia = () => {
@@ -44,7 +45,7 @@ const GridGastronomia = () => {
             <div class="container miGrid">
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4 colMia">
-                        <div className="card cardMia">
+                        <div className="card cardMia animate__fadeInDown">
                             <div className="card-body">
                             <img src={foto1} alt="" className="card-img-top"/>
                                 <div className="card-title">
